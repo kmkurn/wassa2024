@@ -22,32 +22,34 @@ The disaggregated span annotation data must be stored in a [DataFrame](https://p
 
 An example DataFrame is
 
-    pd.DataFrame(
-        {
-            "Sample_Text": [
-                "foo\nbar",
-                "foo\nbar",
-                "bar",
-                "bar",
-                "bar",
-                "baz",
-                "baz",
-            ],
-            "Type": [
-                "highlight",
-                "highlight",
-                "highlight",
-                "highlight",
-                "highlight",
-                "highlight",
-                "highlight",
-            ],
-            "Area_of_Law": ["A", "B", "B", "A", "A", "C C", "C C"],
-            "User_ID": [1, 1, 1, 2, 1, 3, 3],
-            "Tagged_Text": ["foo", "bar", "ba", "ar", "r", "b", "az"],
-            "Tagged_Text_Start": [0, 4, 0, 1, 2, 0, 1],
-        }
-    )
+```python
+pd.DataFrame(
+    {
+        "Sample_Text": [
+            "foo\nbar",
+            "foo\nbar",
+            "bar",
+            "bar",
+            "bar",
+            "baz",
+            "baz",
+        ],
+        "Type": [
+            "highlight",
+            "highlight",
+            "highlight",
+            "highlight",
+            "highlight",
+            "highlight",
+            "highlight",
+        ],
+        "Area_of_Law": ["A", "B", "B", "A", "A", "C C", "C C"],
+        "User_ID": [1, 1, 1, 2, 1, 3, 3],
+        "Tagged_Text": ["foo", "bar", "ba", "ar", "r", "b", "az"],
+        "Tagged_Text_Start": [0, 4, 0, 1, 2, 0, 1],
+    }
+)
+```
 
 where it contains the span annotations of 3 problem descriptions. The first description is
 
