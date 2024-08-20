@@ -117,3 +117,17 @@ Both `run_span_predictor.py` and `run_span_eval.py` scripts use [Sacred](https:/
 ## Running tests
 
 Tests can be run with the command `pytest`. By default, slow tests are excluded. To run them, pass `-m slow` as an argument.
+
+## Citation
+
+If you use our work, please cite:
+
+```
+@inproceedings{kurniawan2024,
+  title = {To {{Aggregate}} or {{Not}} to {{Aggregate}}. {{That}} Is the {{Question}}: {{A Case Study}} on {{Annotation Subjectivity}} in {{Span Prediction}}},
+  booktitle = {Proceedings of the 14th {{Workshop}} on {{Computational Approaches}} to {{Subjectivity}}, {{Sentiment}}, \& {{Social Media Analysis}}},
+  author = {Kurniawan, Kemal and Mistica, Meladel and Baldwin, Timothy and Lau, Jey Han},
+  year = {2024},
+  pages = {362--368},
+}
+```
